@@ -6,6 +6,20 @@
     position: relative
     z-index: 1
 
+    &.jumbo
+        height: 686px
+        margin-bottom: 70px
+
+        & .container
+            flexbox()
+            flex-flow: column nowrap
+
+        /* Hide search for home page */
+        .main-navbar__search
+            display: none
+
+
+
     .main-navbar
         flexbox()
         flex-flow: row nowrap
@@ -48,13 +62,5 @@
                         a.active
                             color: colorYellow
 
-/*                             &:after
-    position: absolute
-    content: ''
-    display: block
-    width: 30px
-    height: 2px
-    background: colorRed
-    margin: 6px 0 0 -5px */
 
 

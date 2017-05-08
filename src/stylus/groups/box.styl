@@ -10,11 +10,6 @@
     position: relative
 
 
-    &__image
-        width: 280px
-        height: 170px
-        overflow: hidden
-        background: colorLighterGray
 
     &__title
         font-size: 30px
@@ -42,3 +37,19 @@
         position: absolute
         top: 120px
         left: 10px
+
+    &__image
+        width: 280px
+        height: 170px
+        overflow: hidden
+        background: colorLighterGray
+        background-size: cover
+
+        &.box-image1
+            background: url(image/image-locations1.jpg) no-repeat center
+
+        &.box-image2
+            background: url(image/image-locations2.jpg) no-repeat center
+
+        &.box-image3
+            background: url(image/image-locations3.jpg) no-repeat center

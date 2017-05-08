@@ -22,7 +22,7 @@
   %body
 
     / HEADER SECTION **************************************
-    #header.section
+    #header.jumbo.section
       .container
 
         / MAIN NAVBAR
@@ -38,7 +38,7 @@
             %nav.main-navbar__nav
               %ul
                 %li
-                  %a.active(href="locations.html") Locations
+                  %a(href="locations.html") Locations
                 %li
                   %a(href="how-it-works.html") How it Works
                 %li
@@ -46,82 +46,76 @@
                 %li
                   %a.btn.btn--yellow(href="register.html") Sign In / Sign Up
 
-
-    / NAVBAR SECTION **************************************
-    #navbar.section
-      .container
-
-        %nav.sec-navbar
-          %ul
-            %li
-              %a.active(href="#") All
-            %li
-              %a(href="#") Restaurants
-            %li
-              %a(href="#") Museums
-            %li
-              %a(href="#") Stores
-            %li
-              %a(href="#") Jewerly
+        / HERO
+        #hero
+          .hero-col
+            .hero__image
+          .hero-col
+            %h1.hero__title
+              Digitalize your holiday today
+            %p.hero__text
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            .hero__buttons
+              %a(href="#")
+                %img(src="dist/image/google-play.svg" alt="Google Play")
+              %a(href="#")
+                %img(src="dist/image/app-store.svg" alt="App Store")
 
 
 
 
-    / CONTENT SECTION **************************************
-    #content.section
-      .container
+    / OFFERS SECTION **************************************
+    #offers.section
+      %h1.section-title What we offer
 
-        %form#profile
+      .offers-wrap
+        .offers-list
 
-          .input-wrap
-            %label First Name
-            %input.profile(type="text" placeholder="Unesite Ime")
+          .offers-box
+            .offers-box__image
+            .offers-box__content
+              .offers-row
+                .offers-box__discount -11%
+                .offers-box__recommended RECOMMENDED
+              .offers-row
+                .offers-box__title Dubrovnik Walls
 
-          .input-wrap
-            %label Last Name
-            %input.profile(type="text" placeholder="Unesite Prezime")
+          .offers-box
+            .offers-box__image
+            .offers-box__content
+              .offers-row
+                .offers-box__discount -11%
+                .offers-box__recommended RECOMMENDED
+              .offers-row
+                .offers-box__title Dubrovnik Walls
 
-          .input-wrap
-            %label First Name
-            %input.profile(type="text" placeholder="Unesite Ime")
+          .offers-box
+            .offers-box__image
+            .offers-box__content
+              .offers-row
+                .offers-box__discount -11%
+                .offers-box__recommended RECOMMENDED
+              .offers-row
+                .offers-box__title Dubrovnik Walls
 
-
-          .input-wrap
-            %input.btn.btn--profile(type="button" value="Save")
-
-
-
-
-
-
-
-    / HERO SECTION **************************************
-    #hero.section
-      %h1.hero-title
-        We offer <span>the best</span> glass products
-        %br/
-        with highest <span>quality</span>
-
-
-
-
+          .offers-box
+            .offers-box__image
+            .offers-box__content
+              .offers-row
+                .offers-box__discount -11%
+                .offers-box__recommended RECOMMENDED
+              .offers-row
+                .offers-box__title Dubrovnik Walls
 
 
 
 
 
-    / DOWNLOAD SECTION **************************************
-    #download.section
-      .container
 
-        .download-row
-          .download__text
-            Download CroCard App and start your journey trough Croatia!
-        .download-row
-          %a(href="#")
-            %img(src="dist/image/google-play.svg" alt="Google Play")
-          %a(href="#")
-            %img(src="dist/image/app-store.svg" alt="App Store")
+
+
+
+
 
 
 
