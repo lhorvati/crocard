@@ -1,0 +1,44 @@
+/* BOX.STYL ======================================= */
+
+
+/* BOX ITEM */
+.box-item
+    flexbox()
+    flex-flow: column nowrap
+    width: 280px
+    margin-bottom: 30px
+    position: relative
+
+
+    &__image
+        width: 280px
+        height: 170px
+        overflow: hidden
+        background: colorLighterGray
+
+    &__title
+        font-size: 30px
+        font-weight: 600
+        text-transform: capitalize
+        color: colorGray1
+        margin: 10px 0
+
+    &__desc
+        font-size: 12px
+        font-weight: 600
+        text-transform: uppercase
+        color: colorLightGray
+
+    &__discount
+        flexbox()
+        flex-center()
+        width: 67px
+        height: 41px
+        color: colorGray1
+        font-size: 22px
+        font-weight: 500
+        background: colorYellow
+        border-radius(4px)
+        position: absolute
+        top: 120px
+        left: 10px

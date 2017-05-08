@@ -1,8 +1,26 @@
 /* MAP.STYL ======================================= */
 
 
-#google-map
+#map
     width: 100%
-    height: 450px
-    overflow: hidden
-    background: colorRed09
+    background: colorWhite
+    flexbox()
+    flex-flow: column nowrap
+
+    .map-bar
+        width: 100%
+        height: 56px
+
+        .container
+            height: 100%
+            flexbox()
+            justify-content: flex-end
+            align-items: center
+
+
+    .map
+        width: 100%
+        height: 352px
+        overflow: hidden
+        background: colorLighterGray
+        margin-bottom: 20px

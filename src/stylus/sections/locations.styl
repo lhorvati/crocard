@@ -1,0 +1,55 @@
+/* LOCATIONS.STYL ======================================= */
+
+#locations2
+    margin-top: 50px
+
+#locations,
+#locations2
+    flex: 1
+
+    .container
+        flexbox()
+        flex-flow: column nowrap
+
+    .locations-row
+        flexbox()
+        flex-flow: row wrap
+        justify-content: space-between
+        align-items: center
+
+        &.title-bar
+            margin-bottom: 15px
+
+        &.list
+            justify-content: flex-start
+            align-items: flex-start
+
+
+
+
+
+    .locations__title
+        font-size: 18px
+        font-weight: 500
+        color: colorBlue
+        text-transform: uppercase
+
+    .locations__btn
+        font-size: 15px
+        font-weight: 500
+        color: colorBlue
+        text-transform: capitalize
+        text-decoration: underline
+
+        &:hover
+            color: colorGray1
+
+
+    /* box item is styled in "stylus/groups/box.styl" */
+
+    /* BOX ITEM */
+    .box-item
+        margin-right: 20px
+
+        &:nth-child(3n)
+            margin-right: 0

@@ -1,0 +1,42 @@
+/* SIDEBAR.STYL ======================================= */
+
+#sidebar
+    width: 270px
+    min-height: 400px
+    flexbox()
+    flex-flow: column nowrap
+    box-sizing()
+    border-right: 1px solid colorLighterGray
+    margin-right: 50px
+
+    p
+        font-size: 18px
+        font-weight: 600
+        color: colorLightGray
+        margin-bottom: 30px
+
+
+.side-nav,
+.side-nav ul
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+
+    ul
+        flexbox()
+        flex-flow: column nowrap
+
+        li
+            margin-bottom: 20px
+
+            a
+                font-size: 20px
+                font-weight: 400
+                color: colorLightGray
+                cursor: pointer
+                transition(.5s)
+
+                &:hover
+                    color: colorBlue
+                    margin-left: 10px
