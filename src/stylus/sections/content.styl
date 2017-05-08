@@ -1,0 +1,90 @@
+/* CONTENT.STYL ======================================= */
+
+#content .container-jumbo
+    padding: 30px 0
+
+#content
+    .group
+        flexbox()
+        flex-flow: row nowrap
+        height: 500px
+        align-items: center
+
+        &.group--center
+            justify-content: center
+        &.group--left
+            flex-flow: row nowrap
+            .group__image
+                right: 0
+
+        &.group--right
+            flex-flow: row-reverse nowrap
+            .group__image
+                left: 0
+
+        .group__content
+            width: 500px
+
+        .group__image
+            width: 560px
+            height: 400px
+            overflow: hidden
+            background: colorRed09
+            position: absolute
+
+
+    .section-row
+        margin: 50px 0
+
+    .section-row p
+        margin-top: 30px
+        font-family: font3
+        font-size: 16px
+        font-weight: 400
+        color: colorGray5
+        line-height: 26px
+
+
+
+    /* Glass */
+    .glass
+        position: relative
+        flexbox()
+        align-items: center
+
+        &.glass--left
+            flex-flow: row nowrap
+            & .glass__box
+                right: 0
+
+        &.glass--right
+            flex-flow: row-reverse nowrap
+            & .glass__box
+                left: 0
+
+
+        .glass__img
+            width: 800px
+            height: 400px
+            background: #ccc
+            flex-shrink: 0
+
+        .glass__box
+            width: 700px
+            height: 330px
+            background: colorRed09
+            z-index: 10
+            flex-shrink: 0
+            position: absolute
+            box-sizing()
+            padding: 50px
+            flexbox()
+            flex-center()
+            font-family: font3
+            font-size: 24px
+            font-weight: 500
+            font-style: italic
+            line-height: 30px
+            color: colorWhite
+            box-shadow(0 0 15px 0 rgba(0,0,0,0.30))
+

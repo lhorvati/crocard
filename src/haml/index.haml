@@ -1,0 +1,160 @@
+- # encoding: UTF-8
+!!! 5
+%html(lang="en")
+  %head
+    %title Crocard
+
+    %meta(charset="UTF-8")
+    %meta(name="keywords" content="Crocard")
+    %meta(name="description" content="")
+    %meta(name="author" content="horvaticluka@gmail.com")
+    %meta(id="meta" name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1.0")
+
+    %link(rel="stylesheet" href="dist/main.css")
+    %link(rel="stylesheet" href="dist/query.css")
+    / Lightbox
+    %link(rel="stylesheet" href="lightbox/css/lightbox.css")
+    / Fonts
+    %link(href="https://fonts.googleapis.com/css?family=Montserrat:500,700,900|Open+Sans|Raleway:400,500,900&subset=latin-ext" rel="stylesheet")/
+
+    %script(type="text/javascript" src="js/script.js")
+
+  %body
+
+    / HEADER SECTION **************************************
+    #header.section
+      .container
+
+        / MAIN NAVBAR
+        .main-navbar
+          .main-navbar__wrap
+            .main-navbar__logo
+              %a(href="index.html")
+                %img(src="dist/image/crocard-logo.svg" alt="Crocard Logo")
+            .main-navbar__search
+              %input.search(type="text" placeholder="Search your location")
+
+          .main-navbar__wrap
+            %nav.main-navbar__nav
+              %ul
+                %li
+                  %a.active(href="locations.html") Locations
+                %li
+                  %a(href="how-it-works.html") How it Works
+                %li
+                  %a(href="support.html") Support
+                %li.ajme
+                  %a.btn.btn--yellow(href="register.html") Sign In / Sign Up
+
+
+    / NAVBAR SECTION **************************************
+    #navbar.section
+      .container
+
+        %nav.sec-navbar
+          %ul
+            %li
+              %a.active(href="#") All
+            %li
+              %a(href="#") Restaurants
+            %li
+              %a(href="#") Museums
+            %li
+              %a(href="#") Stores
+            %li
+              %a(href="#") Jewerly
+
+
+
+
+    / CONTENT SECTION **************************************
+    #content.section
+      .container
+
+        %form#profile
+
+          .input-wrap
+            %label First Name
+            %input.profile(type="text" placeholder="Unesite Ime")
+
+          .input-wrap
+            %label Last Name
+            %input.profile(type="text" placeholder="Unesite Prezime")
+
+          .input-wrap
+            %label First Name
+            %input.profile(type="text" placeholder="Unesite Ime")
+
+
+          .input-wrap
+            %input.btn.btn--profile(type="button" value="Save")
+
+
+
+
+
+
+
+    / HERO SECTION **************************************
+    #hero.section
+      %h1.hero-title
+        We offer <span>the best</span> glass products
+        %br/
+        with highest <span>quality</span>
+
+
+
+
+
+
+
+
+
+    / DOWNLOAD SECTION **************************************
+    #download.section
+      .container
+
+        .download-row
+          .download__text
+            Download CroCard App and start your journey trough Croatia!
+        .download-row
+          %a(href="#")
+            %img(src="dist/image/google-play.svg" alt="Google Play")
+          %a(href="#")
+            %img(src="dist/image/app-store.svg" alt="App Store")
+
+
+
+
+    / FOOOTER SECTION **************************************
+    #footer.section
+      .container
+
+        .footer-row
+
+          .footer__copyright
+            Crocard © 2017
+
+          %nav.footer__nav
+            %ul
+              %li
+                %a(href="#") Become a Partner
+              %li
+                %a(href="#") Contact us
+              %li
+                %a(href="#") Privacy Policy
+              %li
+                %a(href="#") Terms of Use
+              %li
+                %a(href="#") Help
+
+          .footer__created
+            %a(href="https://www.locastic.com/") #madebylocastic
+
+
+        .footer-row
+          %a(href="#")
+            %img(src="dist/image/google-play.svg" alt="Google Play")
+          %a(href="#")
+            %img(src="dist/image/app-store.svg" alt="App Store")
+

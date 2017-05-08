@@ -1,0 +1,60 @@
+/* HEADER.STYL ======================================= */
+
+#header
+    background: blueGradient
+    width: 100%
+    position: relative
+    z-index: 1
+
+    .main-navbar
+        flexbox()
+        flex-flow: row nowrap
+        justify-content: space-between
+        align-items: center
+        height: 80px
+
+        .main-navbar__wrap
+            flexbox()
+            flex-flow: row nowrap
+            align-items: center
+
+            .main-navbar__logo
+                margin-right: 15px
+
+            .main-navbar__search
+                width: 200px
+
+            .main-navbar__nav
+                ul
+                    flexbox()
+                    flex-flow: row nowrap
+                    justify-content: space-between
+
+                    li
+                        margin-right: 30px
+
+                        &:last-child
+                            margin-right: 0
+
+                        a
+                            font-family: Roboto
+                            color: colorWhite
+                            font-weight: 400
+                            font-size: 17px
+
+                            &:hover
+                                color: colorYellow
+
+                        a.active
+                            color: colorYellow
+
+/*                             &:after
+    position: absolute
+    content: ''
+    display: block
+    width: 30px
+    height: 2px
+    background: colorRed
+    margin: 6px 0 0 -5px */
+
+

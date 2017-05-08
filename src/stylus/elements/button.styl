@@ -1,0 +1,57 @@
+/* BUTTON.STYL ======================================= */
+
+/* Button 1 ========================== */
+.btn
+	padding: 10px 20px
+	border-radius(2px)
+	font-family: Roboto
+	font-size: 16px
+	font-weight: 400
+	transition(.7s)
+
+
+.btn--yellow
+	background: colorYellow
+	color: colorDarkGray !important
+
+	&:hover
+		background: colorWhite
+		color: colorDarkGray !important
+
+.btn--profile
+	width: 330px
+	height: 60px
+	background: greenGradient
+	border: 1px solid #7ED321
+	border-radius: 4px
+	color: colorWhite
+	font-size: 22px
+	font-weight: 500
+	cursor: pointer
+
+	&:hover
+		color: colorDarkGray
+
+
+.btn--more
+	color: colorBlue
+	width: 100px
+	margin: 0 auto
+	position: relative
+	cursor: pointer
+
+	&:hover
+		color: colorGray1
+		&:after
+			background: colorGray1
+
+
+	&:after
+		display: block
+		content: ''
+		width: 100px
+		height: 1px
+		background: colorBlue
+		position: absolute
+		margin-top: 8px
+		transition(.7s)

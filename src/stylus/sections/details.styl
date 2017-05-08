@@ -1,0 +1,163 @@
+/* DETAILS.STYL ======================================= */
+
+#details
+    .details-row
+        flexbox()
+        flex-flow: row nowrap
+        justify-content: space-between
+        align-items: flex-end
+        width: 100%
+
+    .details-col
+        flexbox()
+        flex-flow: column nowrap
+        width: 46%
+
+
+    /* Details Header */
+    .details-header
+        background: colorBgGray
+        height: 340px
+        margin-bottom: 100px
+        overflow: visible
+
+        .details__small
+            font-size: 13px
+            font-weight: 400
+            color: colorLightGray
+            padding: 10px 0
+
+        .details__image
+            width: 1200px
+            height: 350px
+            border-radius(5px)
+            flexbox()
+            align-items: flex-end
+            background: #ccc
+            box-sizing()
+            padding: 30px
+
+        .details__gallery
+            flexbox()
+            flex-flow: row nowrap
+            justify-content: space-between
+            width: 250px
+
+            .gallery-item
+                width: 70px
+                height: 70px
+                background: colorWhite
+                border-radius(4px)
+
+
+    /* Details Content */
+    .details-content
+        .container
+            flexbox()
+            flex-flow: row nowrap
+            justify-content: space-around
+            padding-bottom: 50px
+
+        .details__text
+            font-size: 20px
+            font-weight: 100
+            line-height: 28px
+            color: colorGray2
+
+        .details__dropdown
+            margin: 30px 0 10px 0
+
+            span
+                display: block
+                font-size: 16px
+                font-weight: 400
+                color: colorDarkGray
+                margin-bottom: 15px
+
+            /* select.locations is defined in stylus/elements/select.styl */
+
+        .details__info
+            margin-top: 20px
+
+            .info-row
+                flexbox()
+                flex-flow: column nowrap
+                margin-bottom: 30px
+
+            .info__title
+                font-size: 18px
+                font-weight: 600
+                color: colorGray1
+                margin-bottom: 8px
+                flexbox()
+
+            .info__open
+                flexbox()
+                flex-center()
+                width: 85px
+                height: 17px
+                color: colorWhite
+                font-size: 10px
+                font-weight: 600
+                text-transform: uppercase
+                border-radius(2px)
+                margin-left: 15px
+
+                &.info__open--yes
+                    background: colorGreen2
+
+                &.info__open--no
+                    background: colorRed
+
+            .info__desc
+                font-size: 20px
+                font-weight: 400
+                color: colorLightGray
+
+
+        .details__remaining
+            flexbox()
+            flex-center()
+            flex-flow: row nowrap
+            width: 100%
+            height: 80px
+            background: colorYellow
+            border-top-left-radius(2px)
+            border-top-right-radius(2px)
+            border-bottom-left-radius(0)
+            border-bottom-right-radius(0)
+
+
+        .details__percent,
+        .details__time,
+        .details__access
+            color: colorGray1
+            font-weight: 600
+
+        .details__percent
+            font-size: 40px
+            padding-right: 20px
+
+        .details__time
+            font-size: 16px
+
+        .details__access
+            flexbox()
+            flex-center()
+            background: greenGradient
+            width: 100%
+            height: 50px
+            font-size: 14px
+            color: colorWhite
+            border-top-left-radius(0)
+            border-top-right-radius(0)
+            border-bottom-left-radius(2px)
+            border-bottom-right-radius(2px)
+            margin: 2px 0 10px 0
+
+        .details__map
+            width: 100%
+            height: 280px
+            overflow: hidden
+            background: colorLighterGray
+

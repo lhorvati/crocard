@@ -1,0 +1,42 @@
+/* INPUT.STYL ======================================= */
+
+.input-wrap
+    flexbox()
+    flex-flow: column nowrap
+    margin-bottom: 20px
+
+    label
+        font-size: 16px
+        font-weight: 400
+        color: colorGray2
+        margin-bottom: 10px
+
+
+
+
+
+input
+    border: none
+    outline: none
+    background: colorWhite
+    color: colorGray1
+    border-radius(2px)
+    box-sizing()
+
+    &.search
+        padding-left: 40px
+        background-image: url("image/search.svg")
+        background-repeat: no-repeat
+        background-position: 16px
+        background-size: 15px
+        width: 310px
+        height: 33px
+
+    &.profile
+        width: 416px
+        height: 60px
+        border: 1px solid colorLighterGray
+        padding: 0 20px
+        font-size: 16px
+        font-weight: 400px
+        color: colorGray1

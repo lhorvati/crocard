@@ -1,0 +1,34 @@
+/* DOWNLOAD.STYL ======================================= */
+
+#download
+    background: blueGradient
+    color: colorWhite
+    padding: 50px 0
+    border-radius(2px)
+    height: 100px
+    flexbox()
+    flex-center()
+    flex-flow: column nowrap
+    position: relative
+    z-index: 1
+
+    .download-row
+        flexbox()
+        flex-flow: row nowrap
+        justify-content: space-between
+        margin-bottom: 30px
+
+        &:last-child
+            margin-bottom: 0
+            justify-content: center
+
+            a
+                margin-right: 20px
+                &:last-child
+                    margin-right: 0
+
+        .download__text
+            font-size: 20px
+            color: colorWhite
+            text-align: center
+            margin: 0 auto

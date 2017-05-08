@@ -1,0 +1,35 @@
+/* NAVBAR.STYL ======================================= */
+
+#navbar
+
+    .sec-navbar
+        height: 56px
+        flexbox()
+        align-items: center
+
+        ul
+            flexbox()
+            flex-flow: row nowrap
+            height: 100%
+
+            li
+                margin-right: 30px
+                &:last-child
+                    margin-right: 0
+
+                a
+                    color: colorLightGray
+                    font-size: 15px
+                    height: calc(100% - 5px)
+                    flexbox()
+                    align-items: center
+                    justify-content: center
+                    min-width: 60px
+
+
+                    &:hover,
+                    &.active
+                        color: colorDarkGray
+
+                    &.active
+                        border-bottom: 4px solid colorBlue
