@@ -17,7 +17,6 @@
     / Fonts
     %link(href="https://fonts.googleapis.com/css?family=Montserrat:500,700,900|Open+Sans|Raleway:400,500,900&subset=latin-ext" rel="stylesheet")/
 
-    %script(type="text/javascript" src="js/script.js")
 
   %body
 
@@ -29,13 +28,13 @@
         .main-navbar
           .main-navbar__wrap
             .main-navbar__logo
-              %a(href="index.html")
-                %img(src="dist/image/crocard-logo.svg" alt="Crocard Logo")
+              %a.crocard-logo(href="index.html")
+
             .main-navbar__search
               %input.search(type="text" placeholder="Search your location")
 
           .main-navbar__wrap
-            %nav.main-navbar__nav
+            %nav.main-navbar__nav.mobile-hide
               %ul
                 %li
                   %a(href="locations.html") Locations
@@ -45,6 +44,22 @@
                   %a(href="support.html") Support
                 %li
                   %a.btn.btn--yellow(href="register.html") Sign In / Sign Up
+
+            .mobile-nav.mobile-show.desktop-hide
+              .mobile-nav__menu
+              .mobile-nav__wrap
+                .mobile-nav__close
+                %ul.mobile-nav__list
+                  %li
+                    %a(href="index.html") Home Page
+                  %li
+                    %a(href="locations.html") Locations
+                  %li
+                    %a(href="how-it-works.html") How it Works
+                  %li
+                    %a(href="support.html") Support
+                  %li
+                    %a.btn.btn--yellow(href="register.html") Sign In / Sign Up
 
         / HERO
         #hero
@@ -115,11 +130,6 @@
 
 
 
-
-
-
-
-
     / FOOOTER SECTION **************************************
     #footer.section
       .container
@@ -152,3 +162,5 @@
           %a(href="#")
             %img(src="dist/image/app-store.svg" alt="App Store")
 
+%script(src="http://code.jquery.com/jquery-latest.min.js")
+%script(src="dist/js/script.js")

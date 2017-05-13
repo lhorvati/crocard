@@ -26,16 +26,17 @@
       .container
 
         / MAIN NAVBAR
+        / MAIN NAVBAR
         .main-navbar
           .main-navbar__wrap
             .main-navbar__logo
-              %a(href="index.html")
-                %img(src="dist/image/crocard-logo.svg" alt="Crocard Logo")
+              %a.crocard-logo(href="index.html")
+
             .main-navbar__search
               %input.search(type="text" placeholder="Search your location")
 
           .main-navbar__wrap
-            %nav.main-navbar__nav
+            %nav.main-navbar__nav.mobile-hide
               %ul
                 %li
                   %a.active(href="locations.html") Locations
@@ -45,6 +46,22 @@
                   %a(href="support.html") Support
                 %li
                   %a.btn.btn--yellow(href="register.html") Sign In / Sign Up
+
+            .mobile-nav.mobile-show.desktop-hide
+              .mobile-nav__menu
+              .mobile-nav__wrap
+                .mobile-nav__close
+                %ul.mobile-nav__list
+                  %li
+                    %a(href="index.html") Home Page
+                  %li
+                    %a(href="locations.html") Locations
+                  %li
+                    %a(href="how-it-works.html") How it Works
+                  %li
+                    %a(href="support.html") Support
+                  %li
+                    %a.btn.btn--yellow(href="register.html") Sign In / Sign Up
 
 
 
@@ -101,6 +118,7 @@
               .details__time Discounts are only avaliable from 11AM to 6PM.
             .details__access Remaining access to this discount: Unlimited
             .details__map
+              %iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23147.18833117837!2d16.431573960878882!3d43.51488123622954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355dfc6bbcf517%3A0xa1798ff631b49f98!2s21000%2C+Split!5e0!3m2!1sen!2shr!4v1494593111662" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen)
 
 
 

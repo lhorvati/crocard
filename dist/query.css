@@ -1,0 +1,128 @@
+/* QUERY.STYL ======================================= */
+
+
+@media only screen and (max-width: 981px), only screen and (max-device-width: 981px) {
+
+  .mobile-hide {
+    display: none;
+  }
+  .mobile-show {
+    display: block !important;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  /* Header */
+  #header.jumbo {
+    overflow: hidden;
+    height: 790px;
+    margin-bottom: 0;
+  }
+
+  #header .main-navbar .main-navbar__wrap .main-navbar__logo a.crocard-logo {
+    width: 32px;
+    height: 32px;
+    background: url("image/crocard-logo-mobile.svg") center no-repeat;
+    background-size: 32px 32px;
+  }
+
+
+  /* Hero */
+
+  #hero {
+    flex-flow: column-reverse nowrap;
+  }
+
+  #hero .hero-col:first-child {
+    margin: 0;
+  }
+
+  #hero .hero-col .hero__image {
+    width: 305px;
+    height: 475px;
+    background-size: 305px;
+  }
+
+  #hero .hero-col .hero__title {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  #hero .hero-col .hero__text {
+    display: none;
+  }
+  #hero .hero-col .hero__buttons {
+    flex-flow: column nowrap;
+  }
+  #hero .hero-col .hero__buttons a:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+
+
+  /* Offers */
+  .offers-box {
+    width: 280px;
+    height: 170px;
+  }
+
+  .offers-box .offers-box__content {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .offers-box .offers-box__title,
+  .offers-box .offers-box__recommended {
+    display: none;
+  }
+
+
+
+
+
+  /* Footer */
+  #footer {
+    position: relative;
+  }
+
+  #footer .footer-row .footer__nav {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-top: 20px;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    transform:translateX(-50%);
+  }
+
+  #footer .footer-row .footer__nav ul {
+    flex-flow: column nowrap;
+  }
+  #footer .footer-row .footer__nav ul li {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #footer .footer-row:last-child {
+    padding-top: 220px;
+  }
+
+}/* media end */
+
+
+
+
+
+
+@media only screen and (max-width: 481px), only screen and (max-device-width: 481px) {
+
+}
+
+
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
+
+}

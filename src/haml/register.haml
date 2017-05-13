@@ -29,22 +29,38 @@
         .main-navbar
           .main-navbar__wrap
             .main-navbar__logo
-              %a(href="index.html")
-                %img(src="dist/image/crocard-logo.svg" alt="Crocard Logo")
+              %a.crocard-logo(href="index.html")
+
             .main-navbar__search
               %input.search(type="text" placeholder="Search your location")
 
           .main-navbar__wrap
-            %nav.main-navbar__nav
+            %nav.main-navbar__nav.mobile-hide
               %ul
                 %li
-                  %a.active(href="locations.html") Locations
+                  %a(href="locations.html") Locations
                 %li
                   %a(href="how-it-works.html") How it Works
                 %li
                   %a(href="support.html") Support
                 %li
                   %a.btn.btn--yellow(href="register.html") Sign In / Sign Up
+
+            .mobile-nav.mobile-show.desktop-hide
+              .mobile-nav__menu
+              .mobile-nav__wrap
+                .mobile-nav__close
+                %ul.mobile-nav__list
+                  %li
+                    %a(href="index.html") Home Page
+                  %li
+                    %a(href="locations.html") Locations
+                  %li
+                    %a(href="how-it-works.html") How it Works
+                  %li
+                    %a(href="support.html") Support
+                  %li
+                    %a.btn.btn--yellow(href="register.html") Sign In / Sign Up
 
 
     / NAVBAR SECTION **************************************
@@ -54,52 +70,54 @@
         %nav.sec-navbar
           %ul
             %li
-              %a.active(href="#") All
+              %a(href="#") Activity
             %li
-              %a(href="#") Restaurants
+              %a.active(href="#") Edit Profile
             %li
-              %a(href="#") Museums
+              %a(href="#") Security
             %li
-              %a(href="#") Stores
+              %a(href="#") Payments
             %li
-              %a(href="#") Jewerly
+              %a(href="#") Logout
 
 
 
 
     / CONTENT SECTION **************************************
-    #content.section
+    #content.register.section
       .container
 
         %form#profile
 
           .input-wrap
             %label First Name
-            %input.profile(type="text" placeholder="Unesite Ime")
+            %input.profile(type="text" placeholder="Firstname")
 
           .input-wrap
             %label Last Name
-            %input.profile(type="text" placeholder="Unesite Prezime")
+            %input.profile(type="text" placeholder="Lastname")
 
           .input-wrap
-            %label First Name
-            %input.profile(type="text" placeholder="Unesite Ime")
+            %label Birth Date
+            %input.profile(type="text" placeholder="Birth Date")
+
+          .input-wrap
+            %label Gender
+            %select.profile
+              %option Male
+              %option Female
+
+          .input-wrap
+            %label City
+            %input.profile(type="text" placeholder="City")
+
+          .input-wrap
+            %label Country
+            %input.profile(type="text" placeholder="Country")
 
 
           .input-wrap
             %input.btn.btn--profile(type="button" value="Save")
-
-
-
-
-
-
-
-    / HERO SECTION **************************************
-    #hero.section
-      %h1.hero-title
-        
-
 
 
 

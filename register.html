@@ -23,19 +23,17 @@
         <div class="main-navbar">
           <div class="main-navbar__wrap">
             <div class="main-navbar__logo">
-              <a href="index.html">
-                <img alt="Crocard Logo" src="dist/image/crocard-logo.svg">
-              </a>
+              <a class="crocard-logo" href="index.html"></a>
             </div>
             <div class="main-navbar__search">
               <input class="search" placeholder="Search your location" type="text">
             </div>
           </div>
           <div class="main-navbar__wrap">
-            <nav class="main-navbar__nav">
+            <nav class="main-navbar__nav mobile-hide">
               <ul>
                 <li>
-                  <a class="active" href="locations.html">Locations</a>
+                  <a href="locations.html">Locations</a>
                 </li>
                 <li>
                   <a href="how-it-works.html">How it Works</a>
@@ -48,6 +46,29 @@
                 </li>
               </ul>
             </nav>
+            <div class="mobile-nav mobile-show desktop-hide">
+              <div class="mobile-nav__menu"></div>
+              <div class="mobile-nav__wrap">
+                <div class="mobile-nav__close"></div>
+                <ul class="mobile-nav__list">
+                  <li>
+                    <a href="index.html">Home Page</a>
+                  </li>
+                  <li>
+                    <a href="locations.html">Locations</a>
+                  </li>
+                  <li>
+                    <a href="how-it-works.html">How it Works</a>
+                  </li>
+                  <li>
+                    <a href="support.html">Support</a>
+                  </li>
+                  <li>
+                    <a class="btn btn--yellow" href="register.html">Sign In / Sign Up</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -58,49 +79,60 @@
         <nav class="sec-navbar">
           <ul>
             <li>
-              <a class="active" href="#">All</a>
+              <a href="#">Activity</a>
             </li>
             <li>
-              <a href="#">Restaurants</a>
+              <a class="active" href="#">Edit Profile</a>
             </li>
             <li>
-              <a href="#">Museums</a>
+              <a href="#">Security</a>
             </li>
             <li>
-              <a href="#">Stores</a>
+              <a href="#">Payments</a>
             </li>
             <li>
-              <a href="#">Jewerly</a>
+              <a href="#">Logout</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
     <!-- CONTENT SECTION ************************************** -->
-    <div class="section" id="content">
+    <div class="register section" id="content">
       <div class="container">
         <form id="profile">
           <div class="input-wrap">
             <label>First Name</label>
-            <input class="profile" placeholder="Unesite Ime" type="text">
+            <input class="profile" placeholder="Firstname" type="text">
           </div>
           <div class="input-wrap">
             <label>Last Name</label>
-            <input class="profile" placeholder="Unesite Prezime" type="text">
+            <input class="profile" placeholder="Lastname" type="text">
           </div>
           <div class="input-wrap">
-            <label>First Name</label>
-            <input class="profile" placeholder="Unesite Ime" type="text">
+            <label>Birth Date</label>
+            <input class="profile" placeholder="Birth Date" type="text">
+          </div>
+          <div class="input-wrap">
+            <label>Gender</label>
+            <select class="profile">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="input-wrap">
+            <label>City</label>
+            <input class="profile" placeholder="City" type="text">
+          </div>
+          <div class="input-wrap">
+            <label>Country</label>
+            <input class="profile" placeholder="Country" type="text">
           </div>
           <div class="input-wrap">
             <input class="btn btn--profile" type="button" value="Save">
           </div>
         </form>
       </div>
-    </div>
-    <!-- HERO SECTION ************************************** -->
-    <div class="section" id="hero">
-      <h1 class="hero-title"></h1>
     </div>
     <!-- DOWNLOAD SECTION ************************************** -->
     <div class="section" id="download">
